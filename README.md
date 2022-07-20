@@ -3,7 +3,7 @@
 Name of your teams' final project
 -->
 # final-project
-## [National Action Council for Minorities in Engineering(NACME)](https://www.nacme.org) Google Applied Machine Learning Intensive (AMLI) at the `University Of Kentucky`
+## [National Action Council for Minorities in Engineering(NACME)](https://www.nacme.org) Google Applied Machine Learning Intensive (AMLI) at the University Of Kentucky
 
 <!--
 List all of the members who developed the project and
