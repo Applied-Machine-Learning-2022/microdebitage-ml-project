@@ -81,6 +81,11 @@ for xy in zip(split_list, acc_list2):
 ```
 ![min_samples_split vs accuracy](https://user-images.githubusercontent.com/106893508/180866102-b9406195-034d-41cb-8e89-915d759f3dfd.png)
 
+I also did this method with the parameters 'max_depth', 'min_samples_leaf', and 'min_weight_fraction_leaf'. I inserted these parameters into a decision tree and got an accuracy of 80.8%. I attempted to use GridSearchCV for decision trees, and it gave a lower accuracy, around 80.7% (although it took a long time to do so). I did not run the random forest model for this scenario because decision trees were more promising.
+
+#### Column Deletion
+With the deleted columns, a non-tuned decision tree model had an accuracy of [I need to rerun the dt
+
 ##### Some Shortcomings...
 only using accuracy as a performance metric
 not tuning random forest even though it was low accuracy
