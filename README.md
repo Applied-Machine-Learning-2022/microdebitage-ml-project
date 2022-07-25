@@ -31,10 +31,10 @@ Problem: Archeologists
 
 ## Team Workflow
 Each group member tried a different approach to develop an effective model. Below are links to each member's READ.ME file that details and explains their linear path for this project. 
-Kimi
-Rodrigo
-Luke
-Jose
+* Kimi
+* Rodrigo
+* Luke
+* Jose
 
 ## Usage instructions
 <!--
