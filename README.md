@@ -10,14 +10,16 @@ List all of the members who developed the project and
 link to each members respective GitHub profile
 -->
 Developed by: 
-- [member1](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY`
-- [member2](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY` 
-- [member3](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY` 
-- [member4](https://github.com/cbaker6) - `STUDENTS_UNIVERSITY`
+- [Kimi Medina-Castellano](https://github.com/kimimedina) - `University of Kentucky`
 
 ## Description
 <!--
-Give a short description on what your project accomplishes and what tools is uses. In addition, you can drop screenshots directly into your README file to add them to your README. Take these from your presentations.
+Our task for this project was to create a model to accurately classify samples of microdebitage simulants into 5 tool production stages using numerical data provided by Dr. Phyllis Johnson. The level of desired accuracy was not defined, but we managed to reach 80% accuracy using Rodrigo's K-Nearest Neighbors (KNN) model. I tried two models: decision trees and random forest. 
+
+### Complications
+<p>There were three extra columns that our obsidian data had whereas our chert data did not. These were Transparency, Curvature, and Angularity. Initially, I kept these columns for obsidian, added empty columns with the same names to the chert data sets, and filled the empty rows with zeros. Running my two models with this cleaned data gave me 80.1% and 58.7% accuracy in my decision trees and random forest model, respectively. After I tuned the hyperparameters for the decision tree model, my accuracy increased to 80.8%.</p>
+
+<p>All was well until we double-checked with Dr. Johnson on whether or not chert microdebitage can be transparent, and why there was no data for those three columns. She said they did not have those parameters turned on and should have had that data. This prompted the team to remove the three columns alltogether. I ran the updated dataset into both of my models and got about 37% for a basic and tuned model. With my low accuracy, we went with Rodrigo's KNN model. </p>
 -->
 
 ## Usage instructions
