@@ -12,15 +12,23 @@ link to each members respective GitHub profile
 Developed by: 
 - [Kimi Medina-Castellano](https://github.com/kimimedina) - `University of Kentucky`
 
-## Description
-<!--
+### Description
 Our task for this project was to create a model to accurately classify samples of microdebitage simulants into 5 tool production stages using numerical data provided by Dr. Phyllis Johnson. The level of desired accuracy was not defined, but we managed to reach 80% accuracy using Rodrigo's K-Nearest Neighbors (KNN) model. I tried two models: decision trees and random forest. 
+
+## Exploratory Data Analysis
+In this section, I:
+1. **loaded data**: loaded five excel files of measurements of microdebitage samples that represented different stages in the knapping process into separate dataframes. 
+3. **checked for missing data:*** there was no missing data in any of the dataframes.
+4. **assigned an integer for each tool stage:** <permalink>
+5. **merged data for tool stages into one large dataframe** 
+6. **cleaned the large dataframe:** <permalink>
+7. **filled missing data:** 
+8. **visualized correlation between columns:** 
 
 ### Complications
 There were three extra columns that our obsidian data had whereas our chert data did not. These were Transparency, Curvature, and Angularity. Initially, I kept these columns for obsidian, added empty columns with the same names to the chert data sets, and filled the empty rows with zeros. Running my two models with this cleaned data gave me 80.1% and 58.7% accuracy in my decision trees and random forest model, respectively. After I tuned the hyperparameters for the decision tree model, my accuracy increased to 80.8%.
 
 We double-checked with Dr. Johnson on whether or not chert microdebitage can be transparent and why there was no data for those three columns. She said they did not have those parameters turned on and should have had that data. This prompted the team to remove the three columns alltogether. I ran the updated dataset into both of my models and got about 37% for a basic and tuned model. With my low accuracy, we went with Rodrigo's KNN model.
--->
 
 ## Usage instructions
 <!--
