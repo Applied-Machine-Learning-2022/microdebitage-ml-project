@@ -15,6 +15,15 @@ Developed by:
 - [Luke Taylor](https://github.com/LukeTaylor1) - `University of Kentucky` 
 - [Jose Cruz](https://github.com/Resoj) - `University of Kentucky`
 
+## Objective
+To determine the production stages of ancient stone tools using automated measurements taken of experimental microdebitage.
+
+## Goals
+To create a model that will accurately determine the production stage that an ancient stone tool was undergoing based off the features of the microdebitage left behind.
+
+## The Dataset
+We received data for two different stone tools in the form of Excel files via Box (file sharing platform). The Excel files contain features about the physical properties of the microdebitage and each file contains data for each stage of the tool. In preparing the data, we removed features that were the exact same value across all the datasets – values that would make no difference – and removed features that immediately seemed irrelevant to our objective.
+
 ## Description
 <!--
 Problem: Archeologists 
