@@ -39,7 +39,8 @@ tools_df.drop(0, inplace = True)
 ```
 6. **filled missing data** 
 7. **visualized correlation between columns:** 
-![corr_tools_df](https://user-images.githubusercontent.com/106893508/180860119-73a6428f-c14a-4304-ade8-3913ac26a98a.png)
+![heatmap_new](https://user-images.githubusercontent.com/106893508/181030676-b96199ab-8c05-41b4-a145-a3aa7183b2c2.png)
+
 
 ### Complications
 There were three extra columns that our obsidian data had whereas our chert data did not. These were Transparency, Curvature, and Angularity. Initially, I kept these columns for obsidian, added empty columns with the same names to the chert data sets, and filled the empty rows with zeros. Running my two models with this cleaned data gave me 80.1% and 58.7% accuracy in my decision trees and random forest model, respectively. After I tuned the hyperparameters for the decision tree model, my accuracy increased to 80.8%.
@@ -84,10 +85,19 @@ for xy in zip(split_list, acc_list2):
 I also did this method with the parameters 'max_depth', 'min_samples_leaf', and 'min_weight_fraction_leaf'. I inserted these parameters into a decision tree and got an accuracy of 80.8%. I attempted to use GridSearchCV for decision trees, and it gave a lower accuracy, around 80.7% (although it took a long time to do so). I did not run the random forest model for this scenario because decision trees were more promising.
 
 #### Column Deletion
-With the deleted columns, a non-tuned decision tree model had an accuracy of [I need to rerun the dt
+With the deleted columns, a non-tuned decision tree model had an accuracy of 28.47%. A tuned tree had 36.9% accuracy.
+
+### Random Forest 
+I decided to test out random forest because it relies on multiple randomly generated decision tree which should, in theory, increase model accuracy and reduce overfitting.
+
+#### With Transparency, Curvature, and Angularity Columns
+My accuracy for a basic model was 81.98% and a tuned model via GridSearchCV (it worked!) was 81.87%. 
+
+#### Column Deletion
+A basic random forest model without parameter tuning was 37.4% accurate. I was able to use GridSearchCV and get some parameters. The result was a similar accuracy of 37.39%. This didn't feel right, but since we had a better model given our time constraints, I did not explore further. 
 
 ##### Some Shortcomings...
-only using accuracy as a performance metric
-not tuning random forest even though it was low accuracy
-not waiting for gridsearchcv to run (took >2hrs)
+* only using accuracy as a performance metric instead of precision or F1 score
+* not double-checking random forest tuning even though it was low accuracy
+* not waiting for GridSearchCV to run on decision tree model (took >2hrs)
 
