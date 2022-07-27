@@ -40,7 +40,6 @@ Each group member tried a different approach to develop an effective model. Belo
 <!--
 Give details on how to install fork and install your project. You can get all of the python dependencies for your project by typing `pip3 freeze requirements.txt` on the system that runs your project. Add the generated `requirements.txt` to this repo.
 -->
-1. Fork this repo
-2. Change directories into your project
-3. On the command line, type `pip3 install requirements.txt`
-4. ....
+Due to a problem in the data collection of the microdebitage, we did not have an optimal model that would work to fit this problem. We will explain how this model will work once we get the optimal data that we think is needed to obtain better accuracy. After the tensorflow model, we will provide what we think was the best way to go about solving this problem by providing two different seperate problems solved by other models.
+#Tensorflow model
+
