@@ -32,5 +32,5 @@ Problem: Archeologists
 Each group member tried a different approach to develop an effective model. Below are links to each member's READ.ME file that details and explains their linear path for this project. [Link](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/July%2028%20-%20Classifying%20Microdebitage%20-%20Final%20Project.pdf) to slides from group presentation
 * [Kimi](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/bbd838bf069fd07990fa04373e4fc64074db671d/README-DecisionTrees_RandomForest.md)
 * Rodrigo
-* Luke
+* [Luke](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/LukeReadMe.md)
 * Jose
