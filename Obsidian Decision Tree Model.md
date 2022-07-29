@@ -7,7 +7,7 @@ A machine learning model created to identify the various production stages of ob
 -  [Problem to solve](#problem-to-solve)
 -  [Data](#data)
 -  [Procedure](#procedure)
--  [Finding the best model and hyperparamaters](#finding-the-best-model-and-hyperparamters)
+-  [Finding the best model and hyperparameters](#finding-the-best-model-and-hyperparameters)
 -  [Outcomes](#outcomes)
 -  [Future Work](#future-work)
 -  [References](#references)
@@ -40,7 +40,7 @@ We started by removing columns of data that were either the same value across th
 
 Unfortunately, we also had to remove columns that were not present across all the datasets. Unfortunately, this data was found to be crucial for distinguishing both the rock type and production stage.
 
-# Finding the best model and hyperparamters
+# Finding the best model and hyperparameters
 In seeking the best model for our objective, we had every person in the group try a different model using the same training dataset and compared our results.
 
 List of models we tried:
@@ -71,5 +71,7 @@ https://scikit-learn.org/stable/
 https://www.xoriant.com/blog/decision-trees-for-classification-a-machine-learning-algorithm
 https://scikit-learn.org/stable/modules/generated/sklearn.tree.DecisionTreeClassifier.html
 https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
+
 Eberl, M., Johnson, P. , & Estrada Aguila, R. (2022). Studying lithic microdebitage with a dynamic image particle analyzer. North American Archaeologist, 1-16. DOI: 10.1177/01976931221109301 
+
 Unpublished articles provided by Dr. Phyllis Johnson
