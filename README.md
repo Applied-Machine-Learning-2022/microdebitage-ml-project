@@ -258,8 +258,8 @@ sns.heatmap(chert_df.corr(), annot = True)
 ![chert_corr](https://user-images.githubusercontent.com/106893508/181781075-db582982-2a76-44c2-bd75-75786e743d55.png)
 
 ## Modeling
-At this stage in our research, I was able to run an untuned decision tree model that resulted in an accuracy of 43.7%. 
+At this stage in our research, I was able to run an untuned decision tree model that resulted in an accuracy of 43.7%. I attempted to tune the model using GridSearchCV overnight but it resulted in a runtime error after 5 hours. I also ran an untuned random forest model which resulted in a 53.8% accuracy. The syntax did not change from Phase 1.
 
 # Next Steps
-
+Next Steps involve experimenting with Convolutional Neural Networks while we wait for the chert samples to be processed again to add those three columns' data. After, we may try decision tree and random forest modeling again. Thank you!
 
