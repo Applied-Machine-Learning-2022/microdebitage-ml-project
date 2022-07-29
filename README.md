@@ -2,8 +2,13 @@
 <!--
 Name of your teams' final project
 -->
+
 # final-project-the-rock-group-uk
 ## [National Action Council for Minorities in Engineering(NACME)](https://www.nacme.org) Google Applied Machine Learning Intensive (AMLI) at the `University of Kentucky`
+=======
+# final-project
+## [National Action Council for Minorities in Engineering(NACME)](https://www.nacme.org) Google Applied Machine Learning Intensive (AMLI) at the University Of Kentucky
+
 
 <!--
 List all of the members who developed the project and
@@ -263,3 +268,27 @@ At this stage in our research, I was able to run an untuned decision tree model 
 # Next Steps
 Next Steps involve experimenting with Convolutional Neural Networks while we wait for the chert samples to be processed again to add those three columns' data. After, we may try decision tree and random forest modeling again. Thank you!
 
+=======
+- [Rodrigo Aguilar Barrios](https://github.com/Rodrigox30) - `University of California, Berkeley` 
+- [Luke Taylor](https://github.com/LukeTaylor1) - `University of Kentucky` 
+- [Jose Cruz](https://github.com/Resoj) - `University of Kentucky`
+
+## Objective
+To determine the production stages of ancient stone tools using automated measurements taken of experimental microdebitage.
+
+## Goals
+To create a model that will accurately determine the production stage that an ancient stone tool was undergoing based off the features of the microdebitage left behind.
+
+## The Dataset
+We received data for two different stone tools in the form of Excel files via Box (file sharing platform). The Excel files contain features about the physical properties of the microdebitage and each file contains data for each stage of the tool. In preparing the data, we removed features that were the exact same value across all the datasets – values that would make no difference – and removed features that immediately seemed irrelevant to our objective.
+
+## Description
+<!--
+Problem: Archeologists 
+-->
+## Team Workflow
+Each group member tried a different approach to develop an effective model. Below are links to each member's READ.ME file that details and explains their linear path for this project. [Link](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/July%2028%20-%20Classifying%20Microdebitage%20-%20Final%20Project.pdf) to slides from group presentation
+* [Kimi](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/bbd838bf069fd07990fa04373e4fc64074db671d/README-DecisionTrees_RandomForest.md)
+* Rodrigo [TensorFlow](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/README-KNeighborsClassifier.md) [KNeighborsClassifier](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/README-KNeighborsClassifier.md)
+* [Luke](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/LukeReadMe.md)
+* [Jose](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/Obsidian%20Decision%20Tree%20Model.md)
