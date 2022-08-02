@@ -31,6 +31,52 @@ The quoted paragraphs below are taken directly from the proposal presented to us
 
 > This Google-NACME AMLI summer project envisions the application of machine learning techniques to automated measurements taken of experimental microdebitage, in order to test whether different stone tool production stages can be classified."
 
+## Our approach to solving this problem
+![Procedure](Procedure.png)
+We first start by downloading the microdebitage data that was collected from a control experiment and placing it in dataframes to analyze. 
+
+```
+exp_1 = pd.read_excel("EXP-00001-Master.xlsx")
+exp_2 = pd.read_excel('EXP-00002-Master.xlsx')
+exp_3 = pd.read_excel('EXP-00003-Master.xlsx')
+exp_4 = pd.read_excel('EXP-00004-Master.xlsx')
+exp_5 = pd.read_excel('EXP-00005-Master.xlsx')
+```
+
+Then, we clean the data by removing irrelevant columns of data, which are named below.
+```
+not_included = ['Id', 'Filter0','Filter1', 'Filter2','Filter3', 'Filter4', 'Filter5', 'Filter6', 'hash', 'Img Id', 'Curvature', 'Transparency', 'Angularity']
+```
+We will not include these columns of data because it did not have relevant data (same value for all in the column) or it was used to identify the row (Id and Img Id)
+
+The columns of Transparency, Curvature and Angularity were removed since there was no data for those columns for the chert dataset. We decided to remove those because they were crucial towards our models prediction. Rather than replacing it with other values, it was best to just remove it.
+
+Then we added production stage of where each dataframe target was.
+```
+exp_1_filtered['Production Stage'] = 0
+exp_2_filtered['Production Stage'] = 1
+exp_3_filtered['Production Stage'] = 2
+exp_4_filtered['Production Stage'] = 3
+exp_5_filtered['Production Stage'] = 4
+```
+The description of the target columns is:
+* 0 - Chert Stone tool at it's first production stage
+* 1 - Chert stone tool at it's second production stage
+* 2 - Chert stone tool at it's third production stage
+* 3 - Obsidan tool at it's first production stage
+* 4 - Obsidian tool at it's second production stage 
+
+We then proceded to do a heatmap to visualize the data.
+
+![HeatMap](Heatmap.png)
+
+The column that we were looking at was the last column/the last row to determine if there were strong correlations with other data  to our target. We determine that there were no such correlations, which meant that we would not get results that we would want. 
+
+Due to there being no correlation, there was no machine learning algorithm that we thought would best fit this problem so we decided to use the following models:
+* Decision Trees
+* KNeighborsClassifier
+* Tensorflow Model
+
 ## Team Workflow
 Each group member tried a different approach to develop an effective model. Below are links to each member's READ.ME file that details and explains their linear path for this project. [Link](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/main/July%2028%20-%20Classifying%20Microdebitage%20-%20Final%20Project.pdf) to slides from group presentation
 * [Kimi](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/bbd838bf069fd07990fa04373e4fc64074db671d/README-DecisionTrees_RandomForest.md): [Merging Data](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/ad4689c6836f959d342926b97656cd3bbcaa5966/Kimi_Final_Project_AllData.ipynb), [Decision Tree / Random Forest (All Data)](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/09c670e26a88696ed198b198747a1fe082c86c1d/Decision_Tree_Random_Forest_FinalProject.ipynb), [Chert Decision Tree](https://github.com/Applied-Machine-Learning-2022/final-project-the-rock-group-uk/blob/491a5fb447ce8486959d6766b72b051aacb202d7/Chert_Model__Decision_Trees.ipynb)
