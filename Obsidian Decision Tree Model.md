@@ -58,7 +58,7 @@ To find the best hyperparamaters, we started by manually tuning our models' hype
 We used accuracy as the metric to determine which model worked best.
 
 # Outcomes
-After training the model and making predictions, we found this model to have the highest accuracy at ~.85.
+After training the model and making predictions, we found this model to have the an accuracy of ~.60 or 60% accurate.
 
 # Future Work
 - Acquiring the data for the three crucial missing columns by re-running those experiments and get those features. This would also allow us to create one model that can determine whether it's obsidian or chert in addition to determining it's production stages.
