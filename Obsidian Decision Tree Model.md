@@ -16,7 +16,7 @@ A machine learning model created to identify the various production stages of ob
 - [pandas](https://pandas.pydata.org/) (Data analysis and manipulation)
 - [numpy](https://numpy.org/) (Scientific computing)
 - [seaborn](https://seaborn.pydata.org/) (Statistical data visualization)
-- [matplotlib](https://matplotlib.org/) (Visiualization with Python) 
+- [matplotlib](https://matplotlib.org/) (Visualization with Python) 
 - [sklearn](https://scikit-learn.org) (Machine learning with Python)
 
 # Background
@@ -55,10 +55,10 @@ Out of all the models we tried, Decision Tree seemed to provide the best result 
 
 To find the best hyperparamaters, we started by manually tuning our models' hyperparameters and ultimately ran a gridsearch overnight which gave us the best hyperparameters to use.
 
-We used accuracy as the metric to determine which model worked best.
+We used accuracy as the metric to determine which model worked best as we were looking for overall correctness.
 
 # Outcomes
-After training the model and making predictions, we found this model to have the an accuracy of ~.60 or 60% accurate.
+After training the model and making predictions, we found this model to have the an accuracy of ~.60 or ~60%.
 
 # Future Work
 - Acquiring the data for the three crucial missing columns by re-running those experiments and get those features. This would also allow us to create one model that can determine whether it's obsidian or chert in addition to determining it's production stages.
